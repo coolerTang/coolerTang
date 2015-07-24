@@ -1,0 +1,43 @@
+.t_caption img,.subnav a {
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+}
+.t_caption img:hover {
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+}
+.subnav a {
+	transition:All 0.6s ease-in-out;
+	-webkit-transition:All 0.6s ease-in-out;
+	-moz-transition:All 0.6s ease-in-out;
+	-o-transition:All 0.6s ease-in-out;
+}
+.subnav a:hover {
+	transform:rotate(15deg) translate(0,-5px);
+    -webkit-transform:rotate(15deg) translate(0,-5px);
+    -moz-transform:rotate(15deg) translate(0,-5px);
+    -o-transform:rotate(15deg) translate(0,-5px);
+    -ms-transform:rotate(15deg) translate(0,-5px);
+}
+.head{
+	background-color:#515666;
+}
+.logo a{
+	background:none;
+	text-indent:0;
+	font-size:40px;
+	color:#ffffff;
+	line-height:60px;
+}
+.head .head_top .menu li a{
+	color:#fff;
+}
+
+.case_menu{
+	overflow:none;
+}

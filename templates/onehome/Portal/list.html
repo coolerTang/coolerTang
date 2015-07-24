@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$site_seo_keywords}" />
+    <meta name="description" content="{$site_seo_description}">
+    <title>{$site_seo_title} {$site_name}</title>
+    <tc_include file="Public:css"/>
+    <link href="__TMPL__Public/css/sub.css" rel="stylesheet" type="text/css" />
+    <script src="__TMPL__Public/js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<!-- header头部 -->
+<tc_include file="Public:header"/>
+<div id="main-container" class="container">
+<div class="case">
+  <div class="window-head" id="window-head" style="padding-bottom:35px;">
+    <p class="window_menu" id="widow_menu">
+      <span class="z_title">新闻</span>
+      <span class="subnav" id="subnav">
+        {$onenav}
+      </span>
+    </p>
+    <script>
+        $(function(){
+          var allWid=0;
+          $('#subnav').find('a').each(function(){
+            allWid+=$(this).width()+8;
+          })
+          $('#widow_menu').css('width',allWid+80);
+        })  
+      </script>
+  </div>
+      <!--caption-->
+      {$empty}
+      <volist name='list' id='vo'>
+        <div class="boxgrid caption">
+            <a href="{$vo.post_excerpt}" target="_blank" class="t_caption">
+                <img src="__UPLOAD__<?php $tmp_img=json_decode($vo['smeta'],1);echo $tmp_img['thumb'];?>" width="310" height="180" alt="{$vo.post_title}">
+            </a>
+            <div class="cover boxcaption">
+                <h3><a href="{$vo.post_excerpt}" target="_blank"><b>{$vo.post_title}</b></a></h3>
+                <p>{$vo.post_content}</p>
+            </div>
+        </div>
+    </volist>
+</div>
+<tc_include file="Public:footer"/>
+    <script type="text/javascript">
+        $(function(){
+            $(window).resize(function(){
+                $("#main-container").css("min-height", $(window).height() - 343);
+            }).resize();
+            $('.boxgrid').hover(function(){
+                $(".cover", this).stop().animate({top:'150px'},{queue:false,duration:150});
+            }, function() {
+                $(".cover", this).stop().animate({top:'180px'},{queue:false,duration:150});
+            });
+            $('#wechat').hover(function(){
+              $(this).find('.z_weixin').show();
+            },function(){
+              $(this).find('.z_weixin').hide();
+            })
+        })
+    </script>
+</div>
+</body>
+</html>

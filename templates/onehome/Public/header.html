@@ -1,0 +1,20 @@
+
+<div class="z_head">
+        <div class="z_center">
+          <a href="###" class="z_logo animated bounceInRight">
+            <img src="__TMPL__Public/images/oneismore/logo.png" alt="" />
+          </a>
+         <?php
+            $effected_id="onehome_nav";
+            $filetpl="<a href='\$href' target='\$target'>\$label</a>";
+            $foldertpl="";
+            $ul_class="" ;/*内部ul标签的class属性值*/
+            $li_class="" ;/*内部li标签的class属性值*/
+            $style="z_menu animated bounceInLeft";/*最外层ul标签的class属性值*/
+            $showlevel=6;/*显示的层级*/
+            $dropdown='dropdown';/*含有子目录的li标签的class属性值*/
+            $nav=sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+            echo $nav;
+        ?>
+        </div>
+</div>

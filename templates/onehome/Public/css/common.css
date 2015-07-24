@@ -1,0 +1,220 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+}
+
+img {
+	border: none;
+}
+
+ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main_foot {
+	width: 100%;
+	background: #222222;
+	overflow: hidden;
+}
+
+.foot {
+	width: 1000px;
+	overflow: hidden;
+	margin: 30px auto;
+}
+
+.foot_logo {
+	background: url(../images/oneismore/icon.png) no-repeat -314px -161px;
+	text-indent: -10000px;
+	width: 150px;
+	height: 53px;
+	float: left;
+	margin: 40px 80px 0 0;
+}
+
+.foot ul {
+	float: left;
+	text-align: left;
+	line-height: 28px;
+}
+
+.foot ul li {
+	clear: both;
+}
+
+.foot ul h1 {
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.foot ul.list2 h1 {
+	color: #4da422;
+}
+
+.foot ul a {
+	color: #8e8e8e;
+}
+
+.foot ul a:hover {
+	color: #4da422;
+}
+
+.foot ul.list1 {
+	width: 180px;
+}
+
+.foot ul.list2 {
+	width: 205px;
+	float: right;
+	position: relative;
+}
+
+.foot .list1 a i {
+	background: url(../images/oneismore/icon.png) no-repeat;
+	width: 23px;
+	height: 19px;
+	display: block;
+	float: left;
+	margin: 5px;
+}
+
+.foot a i.weibo {
+	background-position: -360px 0;
+}
+
+.foot a i.dri {
+	background-position: -360px -29px;
+}
+
+.foot a i.blog {
+	background-position: -360px -58px;
+}
+
+.foot a i.cool {
+	background-position: -360px -88px;
+}
+
+.foot a:hover i.weibo {
+	background-position: -409px 0;
+}
+
+.foot a:hover i.dri {
+	background-position: -409px -29px;
+}
+
+.foot a:hover i.blog {
+	background-position: -409px -58px;
+}
+
+.foot a:hover i.cool {
+	background-position: -409px -88px;
+}
+
+.foot .list2 i {
+	background: url(../images/oneismore/icon.png) no-repeat;
+	width: 18px;
+	height: 15px;
+	display: block;
+	float: left;
+	margin: 8px 3px 0 0;
+}
+
+.foot i.qq {
+	background-position: -390px -29px;
+}
+
+.foot i.miall {
+	background-position: -390px 0;
+}
+
+.foot i.weixin {
+	background-position: -390px -56px;
+}
+
+.foot i.skype {
+	background-position: -390px -81px;
+}
+
+.foot ul.list2 .jiaotan a {
+	background: url(../images/oneismore/icon.png) no-repeat -317px -123px;
+	width: 76px;
+	height: 33px;
+	text-indent: -10000px;
+	position: absolute;
+	top: 23px;
+	right: 5px;
+}
+
+.foot_bottom {
+	background: #101010;
+	width: 100%;
+	line-height: 45px;
+	color: #8e8e8e;
+}
+.wrap_page{
+	width: 1000px;
+	text-align: center;
+} 
+.page {
+	clear: both;
+	line-height: 28px;
+	font-size: 14px;
+	float: right;
+}
+
+.page a {
+	display: block;
+	color: #fff;
+	padding: 0 10px;
+	height: 30px;
+}
+.page span.current{
+	display: block;
+	padding: 0 10px;
+	background: #fff;
+	height: 30px;
+	color: #69BA07;
+}
+.page li:hover {
+	color: #fff;
+}
+
+.page li {
+	background: #69BA07;
+	color: #fff;
+	float: left;
+	height: 30px;
+	margin: 0 3px;
+	border-radius: 3px;
+}
+
+a.allpage {
+	background: url(../images/oneismore/icon.png) no-repeat -160px -261px;
+	color: #fff;
+	width: 70px;
+	height: 30px;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+a.allpage:hover {
+	background-position: -160px -292px;
+}
+
+h1,h2,h3 {
+	font-weight: normal;
+}
+

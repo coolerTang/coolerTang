@@ -1,0 +1,53 @@
+<admintpl file="header"/>
+<style>
+.home_info li em {
+float: left;
+width: 100px;
+font-style: normal;
+}
+li {
+list-style: none;
+}
+.home_info li{
+    display: block;
+    height: 30px;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <div id="home_toptip"></div>
+  <h4 class="well">System Message</h4>
+  <div class="home_info">
+    <ul  id="thinkcmf_notices">
+    	<!--<li><img src="__TMPL__assets/images/loading.gif"  style="vertical-align: middle;"/><span style="display:inline-block;vertical-align: middle;">加载中...</span></li>-->
+        <li> <em>One CMS V1.0</em> <span style="padding-left:10px;">It is so easy,so quick,so...</span> </li>
+    </ul>
+  </div>
+  <h4 class="well">System Info</h4>
+  <div class="home_info">
+    <ul>
+      <volist name="server_info" id="vo">
+        <li> <em>{$key}</em> <span>{$vo}</span> </li>
+      </volist>
+    </ul>
+  </div>
+  <h4 class="well">Our Team</h4>
+  <div class="home_info" id="home_devteam">
+    <ul>
+      <li> <em>One is more</em> <span>www.itonlys.com</span> </li>
+      <li> <em>团队成员</em> <span>志强不息,Jack&&Rose,Rose&&Jack,灰太狼,唐勤</span> </li>
+      <li> <em>联系邮箱</em> <span>forbetter@qq.vip.com</span> </li>
+    </ul>
+  </div>
+  <h4 class="well">Baby Come On With Us</h4>
+  <div class="" >
+    <ul class="inline" style="margin-left: 22px;font-size: 14px;">
+        <li>Come on baby,let us do some meaningful not just change life,but change one,change two and so on.</li>
+    </ul>
+  </div>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script> 
+</body>
+</html>

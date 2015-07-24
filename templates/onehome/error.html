@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" media="all" href="__TMPL__Public/css/tipsy.css" /> <!-- Tipsy implementation -->
+<script type="text/javascript" src="__TMPL__Public/js/jquery-1.7.2.min.js"></script> <!-- uiToTop implementation -->
+<script type="text/javascript" src="__TMPL__Public/js/custom-scripts.js"></script>
+<script type="text/javascript" src="__TMPL__Public/js/jquery.tipsy.js"></script> <!-- Tipsy -->
+<script type="text/javascript">
+$(window).load(function(){
+	rotate();
+    dogRun();
+	dogTalk();	
+	//Tipsy implementation
+	// $('.with-tooltip').tipsy({gravity: $.fn.tipsy.autoNS});						   
+});
+</script>
+<title>404 - It onlys Not found</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<!-- Universal preloader -->
+<div id="wrapper">
+<!-- 404 graphic -->
+	<div class="graphic"></div>
+<!-- 404 graphic -->
+<!-- Not found text -->
+	<div class="not-found-text">
+    	<h1 class="not-found-text">Sorry,File not found ! <b id="wait"><?php echo($waitSecond); ?></b></h1>
+        <a id="href" href="<?php echo($jumpUrl); ?>"></a>
+    </div>
+<!-- Not found text -->
+<div class="dog-wrapper">
+<!-- dog running -->
+	<div class="dog"></div>
+<!-- dog running -->
+<!-- dog bubble talking -->
+	<div class="dog-bubble">
+    </div>
+    <!-- The dog bubble rotates these -->
+    <div class="bubble-options">
+    	<p class="dog-bubble">
+        	 <?php echo($error); ?>
+        </p>
+    	<p class="dog-bubble">
+	        <br />
+        	 <?php if($message){echo $message;}else{echo "Don't worry! I'm on it!";}?>
+        </p>
+        <p class="dog-bubble">
+        	I wish I had a cookie<br /><img style="margin-top:8px" src="__TMPL__Public/images/oneismore/cookie.png" alt="cookie" />
+        </p>
+    </div>
+    <!-- The dog bubble rotates these -->
+<!-- dog bubble talking -->
+</div>
+<!-- planet at the bottom -->
+	<div class="planet"></div>
+<!-- planet at the bottom -->
+</div>
+<script type="text/javascript">
+    (function(){
+        var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+        var interval = setInterval(function(){
+            var time = --wait.innerHTML;
+            if(time <= 0) {
+                location.href = href;
+                clearInterval(interval);
+            };
+        }, 1000);
+        })();
+    </script>
+</body>
+</html>
